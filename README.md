@@ -1,16 +1,35 @@
+# TypeScript with Node
 ## Initialize Node Project
 
 ```bash
 npm init -y
 ```
 
-## Install Prettier
+## Install TypeScript in the project
+
+```bash
+npm i -D typescript
+```
+
+## Install Prettier Daemon (to use on the editor, is faster)
+
+```bash
+npm i -D @fsouza/prettierd
+```
+
+## Install Prettier (to use on the CLI)
 
 ```bash
 npm i -D prettier
 ```
 
-## Install ESlint
+## Install ESlint Daemon (to use on the editor, is faster)
+
+```bash
+npm i -D eslint_d
+```
+
+## Install ESlint (to use on the CLI)
 
 ```bash
 npm i -D eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin
@@ -35,12 +54,6 @@ npm init @eslint/config
 npx gitignore node
 ```
 
-## Install TypeScript in the project
-
-```bash
-npm i -D typescript
-```
-
 ## Compile TypeScript
 
 ```bash
@@ -57,7 +70,7 @@ node dist/example.js
 ## Compile and Run TypeScript
 
 ```bash
-npx tsc 
+npx tsc
 npx node dist/example.js
 ```
 
