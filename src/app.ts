@@ -1,8 +1,9 @@
-import { BurgerStore } from './cooking_robot/robot'
+import { CakeSplit } from './horrible_parent/parent'
 
-const log = ['bread', 'bread', 'bread', 'ham', 'cheese', 'ham', 'ham', 'cheese']
-
-const store = new BurgerStore(3, 0, 2)
-console.log(store)
-store.createBurgers(log)
-console.log(store)
+const cakeSplit = new CakeSplit()
+cakeSplit.splitCake()
+console.log(cakeSplit)
+cakeSplit.resetSplit()
+console.log(cakeSplit)
+cakeSplit.daughter = 100.23
+console.log(cakeSplit)
