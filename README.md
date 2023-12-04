@@ -49,6 +49,20 @@ npm init @eslint/config
 
 ```
 
+Run ESLint on src from CLI:
+
+```bash
+npx eslint src --ext .ts
+
+```
+
+Run ESLint on src/app.ts from CLI:
+
+```bash
+npx eslint src/app.ts
+
+```
+
 ## Create .gitignore file for Node
 
 ```bash
