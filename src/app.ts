@@ -1,3 +1,5 @@
-import { printUsingDiscriminatedUnions } from "./ts_fundamentals_examples/type_aliases/error-handling-with-type-aliases";
+import { animalsBarking } from "./ts_fundamentals_examples/inheritance";
+import { printAllAnimals } from "./ts_fundamentals_examples/interface-augmenting";
 
-printUsingDiscriminatedUnions()
+animalsBarking()
+printAllAnimals()
