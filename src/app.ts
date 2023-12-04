@@ -1,4 +1,3 @@
-import { print1, print2 } from "./ts_fundamentals_examples/union-types";
+import { printUsingDiscriminatedUnions } from "./ts_fundamentals_examples/type_aliases/error-handling-with-type-aliases";
 
-print1()
-print2()
+printUsingDiscriminatedUnions()
