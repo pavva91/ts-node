@@ -1,5 +1,3 @@
-import { animalsBarking } from "./ts_fundamentals_examples/inheritance";
-import { printAllAnimals } from "./ts_fundamentals_examples/interface-augmenting";
+import { printCalculations } from "./ts_fundamentals_examples/callable-types-in-interfaces";
 
-animalsBarking()
-printAllAnimals()
+printCalculations(11, 5)
