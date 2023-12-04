@@ -1,7 +1,4 @@
-import { CakeSplit } from './horrible_parent/parent'
+import { print1, print2 } from "./ts_fundamentals_examples/union-types";
 
-const cakeSplit = new CakeSplit()
-cakeSplit.splitCake()
-console.log(cakeSplit)
-cakeSplit.resetSplit()
-console.log(cakeSplit)
+print1()
+print2()
