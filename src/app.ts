@@ -1,3 +1,3 @@
-import { runUnknown } from "./ts_fundamentals_examples/unknown-top-type";
+import { cleanPlates } from "./coderpad_problems/medium/plate/plates";
 
-runUnknown()
+cleanPlates()
