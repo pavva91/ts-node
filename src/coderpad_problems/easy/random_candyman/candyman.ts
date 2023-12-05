@@ -8,20 +8,47 @@
 // average size of candies remaining in the bag
 //
 
-import { Candy } from './candy'
+import { Candy, type CandyColors } from './candy'
 
 export class CandyMan {
     candies: Candy[] = []
-
-    addCandy(size: number, color: string): void {
-        const candy = new Candy(size, color)
-        this.candies.push(candy)
+    countCandies: number
+    countRedCandies: number
+    totalSizes: number
+    constructor() {
+        this.countCandies = 0
+        this.countRedCandies = 0
+        this.totalSizes = 0
     }
 
-    // getRandomCandy(): Candy {
-    // }
-}
+    addCandy(size: number, color: CandyColors): void {
+        const candy = new Candy(size, color)
+        this.candies.push(candy)
+        this.totalSizes += size
+        this.countCandies++
+        if (color === 'RED') {
+            this.countRedCandies++
+        }
+    }
 
-function randomInt(min, max){
-    return Math.floor(Math.random() * (max - min + 1)) + min;
+    getRandomCandy(): Candy | undefined {
+        if (this.candies.length > 0) {
+            const randomIndex = Math.floor(Math.random() * this.candies.length)
+            const candy = this.candies.splice(randomIndex, 1)[0]
+            this.totalSizes -= candy.size
+            this.countCandies--
+            if (candy.color === 'RED') {
+                this.countRedCandies--
+            }
+            return candy
+        }
+    }
+
+    getAverageSize(): number {
+        return this.totalSizes / this.countCandies
+    }
+
+    getRedCandyChance(): number {
+        return this.countRedCandies / this.countCandies
+    }
 }

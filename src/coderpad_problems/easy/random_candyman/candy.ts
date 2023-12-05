@@ -1,16 +1,8 @@
 export class Candy {
-    private readonly size: number
-    private readonly color: string
-    constructor(size: number, color: string) {
-        this.size = size
-        this.color = color
-    }
-
-    getSize(): number {
-        return this.size
-    }
-
-    getColor(): string {
-        return this.color
-    }
+    constructor(
+        public readonly size: number,
+        public readonly color: CandyColors
+    ) { }
 }
+
+export type CandyColors = 'RED' | 'GREEN'
