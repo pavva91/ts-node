@@ -1,8 +1,6 @@
 export class Ingredient {
-    storingCapacity: number
-    storedItems: number
-    constructor(storingCapacity: number) {
-        this.storingCapacity = storingCapacity
+    public storedItems: number
+    constructor(readonly storingCapacity: number) {
         this.storedItems = 0
     }
 

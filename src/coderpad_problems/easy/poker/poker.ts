@@ -1,14 +1,12 @@
 export class Poker {
-    deck: string[]
-    constructor(initialDeck: string[]) {
-        this.deck = initialDeck
+    constructor(private deck: string[]) {
     }
 
-    getDeck(): string[] {
+    public getDeck(): string[] {
         return this.deck
     }
 
-    shuffleMyCards(): void {
+    public shuffleMyCards(): void {
         const shuffled: string[] = []
 
         for (let i = 0; i < this.deck.length; i++) {

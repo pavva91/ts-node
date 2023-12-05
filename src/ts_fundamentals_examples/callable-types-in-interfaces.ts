@@ -11,6 +11,6 @@ const add: TwoNumberCalculation = (a, b) => a + b
 const subtract: TwoNumberCalc = (a, b) => a - b
 
 export function printCalculations(a: number, b: number): void {
-    console.log(add(a,b))
-    console.log(subtract(a,b))
+    console.log(add(a, b))
+    console.log(subtract(a, b))
 }

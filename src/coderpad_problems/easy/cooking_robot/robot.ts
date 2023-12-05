@@ -1,10 +1,10 @@
 import { Ingredient } from './ingredient'
 
 export class BurgerStore {
-    bread: Ingredient
-    cheese: Ingredient
-    ham: Ingredient
-    createdBurgers: number
+    public readonly bread: Ingredient
+    public readonly cheese: Ingredient
+    public readonly ham: Ingredient
+    public createdBurgers: number
     constructor(
         breadCapacity: number,
         cheeseCapacity: number,

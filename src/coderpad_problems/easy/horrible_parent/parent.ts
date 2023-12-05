@@ -1,22 +1,22 @@
 export class CakeSplit {
-    private son: number
-    private daughter: number
+    private sonPart: number
+    private daughterPart: number
     constructor() {
-        this.son = 0
-        this.daughter = 0
+        this.sonPart = 0
+        this.daughterPart = 0
     }
 
     resetSplit(): void {
-        this.son = 0
-        this.daughter = 0
+        this.sonPart = 0
+        this.daughterPart = 0
     }
 
     splitCake(): void {
         for (let i = 0; i < 20; i++) {
             if (this.flipCoin()) {
-                this.son++
+                this.sonPart++
             } else {
-                this.daughter++
+                this.daughterPart++
             }
         }
     }
