@@ -1,4 +1,4 @@
-export let myCar: [number, string, string] = [2020, 'Toyota', 'Corolla']
+export let myCar: [number, string, string?] = [2020, 'Toyota', 'Corolla']
 
 // NOTE:TypeScript checks type
 // myCar = ['tesla', 2, 'ciao']

@@ -1,5 +1,5 @@
 // NOTE: Abbreviated way to declare a class (use this to declare classes)
-class Car {
+export class CarH {
     constructor(
         public make: string,
         public model: string,
