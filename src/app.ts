@@ -1,3 +1,3 @@
-import { cleanPlates } from "./coderpad_problems/medium/plate/plates";
+import { executeTest } from "./coderpad_test_1/endpoint";
 
-cleanPlates()
+executeTest()
