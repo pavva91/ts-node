@@ -100,3 +100,21 @@ Or:
 ```bash
 npm start
 ```
+
+## Node.js Worker Threads
+
+Install module:
+Worker threads works with .js or .jsx, for now I managed to make it work directly with .js
+TODO: Workers with TypeScript
+
+```bash
+npm install --save @types/node
+```
+
+### Workers with .js
+
+Run ./src/concurrency/threads-example.js
+
+```bash
+node src/concurrency/threads-example.js
+```
