@@ -1,4 +1,5 @@
-# Test on [CoderPad] (https://ide.codingame.eu/) 
+# Test on [CoderPad] (https://ide.codingame.eu/)
+
 Test done at the 03:48 of the 06/12/2023
 
 Topics:
@@ -38,11 +39,13 @@ CAST(customers.total AS FLOAT) / CAST(customer.orders) AS FLOAT AS "ratio"
     -   [https://docs.sevenbridges.com/docs/enabling-cross-origin-resource-sharing-cors] (https://docs.sevenbridges.com/docs/enabling-cross-origin-resource-sharing-cors)
 -   Send commands to staging environment (virginia)
 
-## TypeScript
+## TypeScript & Node.js
 
 ### Problems
 
 -   Node.js Concurrency with workers (./worker-concurrency.ts)
+    -   PROBLEM: Node.js cannot use multi-threading. This is because Node.js uses JavaScript and JavaScript is single-threaded.
+    -   SOLUTION: Worker Threads
 -   Input stream with regex (./regex.ts)
 -   Best Chinese Gift (./gift.ts)
 -   Given a network and an initial node calulate the exit node and detect if loops happens (./endpoint.ts)
