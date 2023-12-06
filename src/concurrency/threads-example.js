@@ -7,6 +7,7 @@ const {
 } = require('worker_threads')
 const { sayHello } = require('./say-hello')
 
+    console.log(isMainThread)
 if (isMainThread) {
     // This code is executed in the main thread and not in the worker.
 
@@ -20,14 +21,7 @@ if (isMainThread) {
     const inputs = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10']
     const threads = new Set()
     for (let i = 0; i < inputs.length; i++) {
-        const e = inputs[i]
-        // const workerI = new Worker('./src/concurrency/say-hello.js', {
-        //     workerData: {
-        //         greetMessage: e,
-        //     },
-        // })
         const worker2 = new Worker(__filename)
-        // Listen for messages from the worker and print them.
         worker2.on('message', msg => {
             console.log(i)
             // console.log(msg)
